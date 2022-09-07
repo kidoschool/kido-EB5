@@ -1,10 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/circular-std');
-
+/* 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 /* @media (max-width: 1000px) {
   * {
@@ -514,7 +514,8 @@ button.bannerbtn2:hover {
   .accordion-item{
     width: 90%;
     align-items: center;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
+    margin: 0 auto;
   }
 }
 
@@ -579,20 +580,12 @@ button.bannerbtn2:hover {
 }
 
 
-/* @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .Awessome-item{
-    border-radius:10px;
-    width: 40vw;
-    margin: 16px;
-    height: 130px;
-    float: left;
-    background-color: white;
-    margin-left: 5rem;
-    cursor: pointer;
-    position: relative;
+    margin: 1vh 27vw;
   }
   
-} */
+}
 
 /* ---------------------------------------------Awessome-start--------------------------------------------- */
 
@@ -600,14 +593,7 @@ button.bannerbtn2:hover {
 
 @media only screen and (max-width: 1024px) {
   .kocka220x140 {
-    border-radius:5px;
-    width: 40vw;
-    /* display: block; */
-    margin-left: 10rem;
-    height: auto;
-    /* float: left; */
-    background-color: white ;
-    margin: 0 auto;
+    margin: 1vh 47vw;
   }
 }
 
