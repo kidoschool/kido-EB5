@@ -1,10 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/circular-std');
-/* 
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} */
+} 
 
 /* @media (max-width: 1000px) {
   * {
@@ -16,7 +16,7 @@
 
 html{
   font-size: 65.5%;
-  /* font-family: 'Circular Std', sans-serif ; */
+  font-family: 'Circular Std', sans-serif ;
 }
 
 body{
@@ -197,7 +197,7 @@ a {
       left: -100%;
       top: 5rem;
       flex-direction: column;
-      background-color: white;
+      background-color: white !important;
       width: 100%;
       border-radius: 10px;
       /* text-align: center; */
@@ -261,15 +261,19 @@ a {
 
 #banner {
   position: relative;
-  height: 80vh;
-  width: 50vw;
+  /* height: 80vh;
+  width: 50vw; */
   overflow: hidden;
-  background: url(images/passport.png) no-repeat ;
+  /* background: url(images/passport.png) no-repeat ; */
   background-size: cover;
-  opacity: 0.5;
   border-radius: 0 60px 80px 30px;
-  margin-top: 30px;
-  z-index: -1;
+  /* margin-top: 30px; */
+  /* z-index: -1; */
+}
+
+.passport-img{
+  opacity: 0.5;
+
 }
 
 .banner-text{
@@ -281,8 +285,8 @@ a {
 @media only screen and (max-width: 768px) {
   #banner {
     position: relative;
-    height: 50vh;
-    width: 100vw;
+    /* height: 50vh;
+    width: 100%; */
     overflow: hidden;
     margin: 0 auto;
   }
@@ -406,7 +410,7 @@ button.bannerbtn2:hover {
 
 .services-item {
   margin: 15px 0;
-  padding: 20px;
+  padding: 38px;
   text-align: center;
   height: 23vh;
   width: 20vw;
@@ -415,6 +419,8 @@ button.bannerbtn2:hover {
   border-radius: 3px;
   cursor: pointer;
   position: relative;
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+
 }
 
 .services-item:hover{
@@ -422,6 +428,18 @@ button.bannerbtn2:hover {
   color: white;
   cursor: pointer;
 }
+
+
+/* @media only screen and (max-width: 768px) {
+  .services-item {
+    margin: 0 auto;
+    border-radius: 10px 20px;
+    margin-bottom: 3rem;
+    height: auto;
+    width: 23vw;
+    padding: 40px;
+  }
+} */
 
 
 
@@ -432,7 +450,7 @@ button.bannerbtn2:hover {
     margin-bottom: 3rem;
     height: auto;
     width: auto;
-    padding: 45px;
+    padding: 40px;
   }
 
   .benefits{
@@ -497,12 +515,16 @@ button.bannerbtn2:hover {
   border: solid 2px white;
   cursor: pointer;
   margin-bottom: 5rem;
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+
 }
 
 .we-offer-item:hover{
   border: solid 2px #00356B ;
   background:white;
   color: #000;
+  /* box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15); */
+
 }
 
 
@@ -512,8 +534,8 @@ button.bannerbtn2:hover {
     margin: 0 auto;
     margin-bottom: 2rem;
     padding: 30px;
-    height: 130px;
-    width: 300px;
+    height: auto;
+    width: auto;
     overflow: hidden;
     border-radius: 10px;
     border: solid 2px white;
@@ -523,6 +545,7 @@ button.bannerbtn2:hover {
   .offer-img{
     border-radius: 40px 0;
     margin: 0 auto;
+
   }
 }
 
@@ -655,7 +678,7 @@ button.bannerbtn2:hover {
 
 
 .card-container {
-  /* display: inline-block; */
+  display: inline-block;
   margin: 0 auto;
   padding: 0 12px;
   perspective: 900px;
@@ -705,20 +728,14 @@ transform-style: preserve-3d;
   transform: rotateY(180deg);
 }
 
-/* @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .card-container{
-    margin: 1vh 27vw;
-    margin-bottom: 1rem;
+    /* margin: 1vh 27vw; */
+    display: flex;
     align-items: center;
-  }
-}  */
-
-
-
-@media only screen and (max-width: 1028px) {
-  .card-container{
-    margin: 1vh 27vw;
-    margin-bottom: 2rem;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 3rem;
     /* align-items: center; */
   }
 } 
@@ -773,10 +790,13 @@ transform-style: preserve-3d;
 
 @media screen and (max-width: 1028px) {
   .kocka220x140 {
-    flex-direction: column;
+    /* flex-direction: column; */
     /* align-items: center !important; */
-    /* margin-bottom: 20px; */
-    margin: 3vh 18vw;
+    margin-bottom: 20px;
+    margin: 3vh 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .listing-stuff{
@@ -917,8 +937,8 @@ svg#play:hover #triangle {
 
 @media screen and (max-width: 1028px) {
   .input-mess{
-    width: 300px;
-    height: 90px;
+    width: auto;
+    height:auto;
     padding: 8px 8px;
     margin: 0 auto;
     font-size: 13px;
