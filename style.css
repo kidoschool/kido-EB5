@@ -23,6 +23,30 @@ body{
   font-family: 'Circular Std', sans-serif !important;
 
 }
+
+.modal-content{
+  padding: 4rem;
+}
+
+.Secur-Text{
+  font-size: 14px;
+}
+
+.modal-title{
+  font-size: 30px;
+}
+
+.modal-header{
+  justify-content: center;
+  color: #00356b;
+  }
+
+  .btn_close{
+    font-size: 25px;
+    color: #00356b;
+    background: none;
+    border: none;
+  }
 /* ----------------------------------------------nav-start---------------------------------------------- */
 
 h1{
@@ -416,7 +440,7 @@ button.bannerbtn2:hover {
   margin: 15px 0;
   padding: 38px;
   text-align: center;
-  height: 23vh;
+  height: 25vh;
   width: 20vw;
   background-color: white;
   overflow: hidden;
@@ -469,6 +493,7 @@ button.bannerbtn2:hover {
   font-size: 18px;
   text-align: left;
   padding-bottom: 7px;
+  color: #002b6b;
 }
 
 .benefits-p{
@@ -590,6 +615,7 @@ button.bannerbtn2:hover {
   font-weight: 100;
   color: #000;
   transform: translateY(-4px);
+  padding-left: 3rem;
 }
 .accordion-button:not(.collapsed)::after {
   width: auto;
@@ -620,47 +646,73 @@ button.bannerbtn2:hover {
 
 
 /* ---------------------------------------------Awessome-start--------------------------------------------- */
-/* 
+
 .Awessome-item{
   border-radius:10px;
   width: 150px;
   margin: 25px;
   height: 120px;
   align-items: center;
-  background-color: white;
+  /* background-color: ; */
   margin-left: 8rem;
   cursor: pointer;
   position: relative;
-  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);s */
 }
 
+
+/* .ludo-img {
+  background-color: #cf23cf;
+} */
+
+
+
+
+.kido-lo, .chess-logo, .rocket-logo, .notes-logo, .chat-logo {
+  background: #ddd;
+  color: #696687;
+}
+
+
+
+.kido-lo.active, .kido-lo:hover{
+  background-color: #f19b10;
+  color: #fff;
+}
+ 
+.chess-logo.active, .chess-logo:hover{
+  background-color: #8379ee;
+  color: white;
+}
+
+.rocket-logo.active, .rocket-logo:hover{
+  background-color: #f87790;
+  color: white;
+}
+
+.notes-logo.active, .notes-logo:hover{
+  background-color: #58bbfa;
+  color: white;
+}
+
+.chat-logo.active, .chat-logo:hover{
+  background-color: #4fd68d;
+  color: white;
+}
+
+
+/* .Awessome-item.active{
+  background-color: #4fd68d;
+  color: white;
+} */
+
+
+/*
 .Awessome-item:hover{
   transform: rotateY(180deg);
 }
 
-.back {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-}
 
-.back {
-  transform: rotateY(180deg);
-}
-
- .back {
-  position: absolute;
-  background: #FEC606;
-  top: 0;
-  left: 0;
-  width: 100px;
-  height: 100px;
-  border-radius: 5px;
-  color: white;
-  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
-  backface-visibility: hidden;
-}
 
 
 @media only screen and (max-width: 768px) {
@@ -681,68 +733,6 @@ button.bannerbtn2:hover {
 
 
 
-.card-container {
-  display: inline-block;
-  margin: 0 auto;
-  padding: 0 12px;
-  perspective: 900px;
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 7rem;
-}
-.card {
-position: relative;
-width: 150px;
-height: 120px;
-transition: all 0.6s ease;
-transform-style: preserve-3d;
-}
-
-.front, .back {
-  position: absolute;
-  background: #b59b28;
-  top: 0;
-  left: 0;
-  width: 150px;
-  height: 120px;
-  border-radius: 5px;
-  color: white;
-  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
-  backface-visibility: hidden;
-}
-
-
-.front {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-}
-.back {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-}
- 
-.card-container:hover .card {
-  transform: rotateY(180deg);
-}
-.back {
-  transform: rotateY(180deg);
-}
-
-@media only screen and (max-width: 768px) {
-  .card-container{
-    /* margin: 1vh 27vw; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-bottom: 3rem;
-    /* align-items: center; */
-  }
-} 
 
 /* ---------------------------------------------Awessome-start--------------------------------------------- */
 
@@ -975,12 +965,16 @@ footer{
   background-color: #00356B ;
 }
 
+.bottom-line {
+  border-bottom: 1px solid #bfc4db;
+}
+
 
 #return-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: rgba(73, 122, 255, .8);
+  background: #00356b;
   width: 50px;
   height: 50px;
   display: block;
@@ -1020,7 +1014,7 @@ footer{
 
 
 #return-to-top:hover {
-  background: rgb(73, 122, 255);
+  background: #00356b;
 }
 
 #return-to-top:hover i {
@@ -1032,22 +1026,34 @@ footer{
 
 
 .franchise-awessome{
-  font-size: 30px;
+  font-size: 33px;
   font-weight: 900;
   color: #00356B;
 }
 
 .franchise-tag{
-  font-size: 18px;
-  bottom: 30px;
-  color: #222;
+  font-size: 15px;
+  /* bottom: 30px; */
+  color: red  ;
 }
 
 .franchise-p{
-  font-size: 20px;
+  font-size: 15px;
   color: #222;
 }
 
+.broc_common{
+  background-color: white;
+  border: 1px solid #00356b;
+  color: #00356b;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.broc_common:hover{
+  background-color: #00356b;
+  color: #fff;
+}
 
 
 .main-liner {background: url("bg.png") repeat-y right top transparent;}

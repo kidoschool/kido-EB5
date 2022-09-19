@@ -1,0 +1,40 @@
+
+  
+  /* Create an active/current tablink class */
+  .tab .Awessome-item .active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    /* border: 1px solid #ccc; */
+    border-top: none;
+  }
+
+
+
+  .statue-img {
+    width: 500px;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+
+.equity-awess{
+    padding-top: 8%;
+}
+
+
+@media (max-width: 1000px) {
+    .hidden-mobile {
+      display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .tabcontent {
+      margin: 0 auto;
+    }
+}
+

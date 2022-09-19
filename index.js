@@ -41,3 +41,39 @@ function closeMenu() {
   })()
 
 
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    // for (i = 0; i < tablinks.length; i++) {
+    //   tablinks[i].className = tablinks[i].className.replace(" active", "");
+    // }
+    document.getElementById(cityName).style.display = "block";
+    // evt.currentTarget.className += " active";
+
+    // document.getElementsByClassName("kido-lo").classList.remove('active');
+
+    $(".Awessome-item").removeClass("active");
+
+    evt.currentTarget.classList.add('active');
+
+  }
+
+
+// Add active class to the current button (highlight it)
+// var header = document.getElementById("myDIV");
+// var btns = document.getElementsByClassName("Awessome-item");
+//   btns.addEventListener("click", function() {
+//   // var current = document.getElementsByClassName("active");
+//     btns.classList.remove('active');
+//   // current[0].className = current[0].className.replace(" active", "");
+//     this.classList.add('active');
+//   });
+
+
+$(document).ready(function(){
+  $("#myModal").modal('show');
+});
