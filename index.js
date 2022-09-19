@@ -77,3 +77,10 @@ function closeMenu() {
 $(document).ready(function(){
   $("#myModal").modal('show');
 });
+
+$(document).ready(function(){
+  $("#mybtn").click(function(){
+    $("#myModal").modal('show');
+  });
+});
+
