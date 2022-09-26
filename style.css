@@ -1102,3 +1102,12 @@ img.ludo-img, .vision, .creation, .chat{
   color: #fff;
   padding: 0.2em;
 }
+
+
+.red:checked{
+  background: linear-gradient(brown, red)
+}
+
+.red{
+  background: red;
+}
