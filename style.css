@@ -1068,7 +1068,7 @@ area{
 }
 
 .dot {
-  background: black;
+  background: orange;
   border-radius: 50%;
   height: 20px;
   position: absolute;
@@ -1077,12 +1077,12 @@ area{
 
 .dot1 {
   bottom: 100%;
-  left: 10%;
+  left: 30%;
 }
 
 .dot2 {
-  top: 30%;
-  right: 20%;
+  top: 1%;
+  left: 45%;
 }
 
 .dot3 {
