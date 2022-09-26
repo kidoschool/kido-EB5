@@ -63,20 +63,11 @@ function closeMenu() {
   }
 
 
-// Add active class to the current button (highlight it)
-// var header = document.getElementById("myDIV");
-// var btns = document.getElementsByClassName("Awessome-item");
-//   btns.addEventListener("click", function() {
-//   // var current = document.getElementsByClassName("active");
-//     btns.classList.remove('active');
-//   // current[0].className = current[0].className.replace(" active", "");
-//     this.classList.add('active');
-//   });
-
-
 $(document).ready(function(){
   $("#myModal").modal('show');
 });
+
+
 
 $(document).ready(function(){
   $("#mybtn").click(function(){
@@ -84,3 +75,33 @@ $(document).ready(function(){
   });
 });
 
+
+// $(function () {
+//   $('#scrollToBottom').bind("click", function () {
+//     $('html, body').animate({ scrollTop: $(document).height() }, 1200);
+//       return false;
+//   });
+// });
+
+
+const counters = document.querySelectorAll('.counter');
+const speed = 200;
+
+counters.forEach(counter => {
+    const updateCount = () => {
+        const target  = +counter.getAttribute('data-target');
+
+        const count = +counter.innerText
+
+        const inc = target/speed;
+
+        if (count < target) {
+            counter.innerText = count + inc;
+            setTimeout(updateCount, 1);
+        }else{
+            count.innerText =target;
+        }
+    }
+
+    updateCount();
+});
