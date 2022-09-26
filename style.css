@@ -1076,7 +1076,7 @@ area{
 }
 
 .dot1 {
-  bottom: 100%;
+  top: 40%;
   left: 30%;
 }
 
@@ -1104,10 +1104,4 @@ img.ludo-img, .vision, .creation, .chat{
 }
 
 
-.red:checked{
-  background: linear-gradient(brown, red)
-}
 
-.red{
-  background: red;
-}
