@@ -457,7 +457,6 @@ button.bannerbtn2:hover {
   background-color: white;
   overflow: hidden;
   border-radius: 5px;
-  cursor: pointer;
   position: relative;
   box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
 
@@ -466,7 +465,6 @@ button.bannerbtn2:hover {
 .services-item:hover{
   background-color: #800080;
   color: white;
-  cursor: pointer;
 }
 
 
@@ -494,7 +492,7 @@ button.bannerbtn2:hover {
   font-size: 18px;
   text-align: left;
   padding-bottom: 7px;
-  color: #002b6b;
+  /* color: #002b6b; */
 }
 
 
@@ -545,7 +543,6 @@ button.bannerbtn2:hover {
   overflow: hidden;
   border-radius: 10px;
   border: solid 2px white;
-  cursor: pointer;
   margin-bottom: 5rem;
   box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
 
@@ -640,9 +637,13 @@ button.bannerbtn2:hover {
 /* ---------------------------------------------map-start--------------------------------------------- */
 
 .map{
-  background-color: #00356B;
+  /* background-color: #00356B; */
   background-size: cover;
   height: auto;
+}
+
+.head-titles{
+  color: #002b6b;
 }
 
 /* ---------------------------------------------map-end--------------------------------------------- */
