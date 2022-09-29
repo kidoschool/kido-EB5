@@ -52,11 +52,13 @@ function closeMenu() {
     //   tablinks[i].className = tablinks[i].className.replace(" active", "");
     // }
     document.getElementById(cityName).style.display = "block";
+    document.getElementById(cityName).focus();
+
     // evt.currentTarget.className += " active";
 
     // document.getElementsByClassName("kido-lo").classList.remove('active');
 
-    $(".Awessome-item").removeClass("active");
+    $(".Awessome-items").removeClass("active");
 
     evt.currentTarget.classList.add('active');
 
@@ -64,7 +66,7 @@ function closeMenu() {
 
 
 $(document).ready(function(){
-  $("#myModal").modal('show');
+  // $("#myModal").modal('show');
 });
 
 
@@ -73,6 +75,8 @@ $(document).ready(function(){
   $("#mybtn").click(function(){
     $("#myModal").modal('show');
   });
+  $('.carousel').carousel()
+
 });
 
 
@@ -138,7 +142,7 @@ function myMap() {
 
     // ===== Scroll to Top ==== 
     $(window).scroll(function() {
-      if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+      if ($(this).scrollTop() >= window.innerHeight) {        // If page is scrolled more than 50px
           $('#return-to-top').fadeIn(200);    // Fade in the arrow
       } else {
           $('#return-to-top').fadeOut(200);   // Else fade out the arrow
@@ -148,4 +152,10 @@ function myMap() {
       $('body,html').animate({
           scrollTop : 0                       // Scroll to top of body
       }, 500);
+  });
+
+
+
+  $(window).scroll(function(){
+    $('nav').toggleClass('scrolled', $(this).scrollTop() > window.innerHeight);
   });
