@@ -66,7 +66,7 @@ function closeMenu() {
 
 
 $(document).ready(function(){
-  // $("#myModal").modal('show');
+  $("#myModal").modal('show');
 });
 
 
