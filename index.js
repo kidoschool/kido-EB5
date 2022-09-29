@@ -72,9 +72,15 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
+
   $("#mybtn").click(function(){
     $("#myModal").modal('show');
   });
+
+  $("#videoModBtn").click(function(){
+    $("#my_modal").modal('show');
+  });
+
   $('.carousel').carousel()
 
 });
