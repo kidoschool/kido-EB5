@@ -40,6 +40,22 @@ function closeMenu() {
       })
   })()
 
+  function openCity1(evt, cityName) {
+
+    // console.log(document.getElementById(cityName));
+    // document.getElementById(cityName).focus();
+
+    // const element = document.getElementById(cityName);
+    // $('#'+cityName).focus();
+
+    // if (element.value.length >= 10) {
+        // alert("Mobile Number Should be in 10 digits only");
+        // element.value = "";
+        // window.setTimeout(() => element.focus(), 0);
+        // return false;
+    // }
+
+  }
 
   function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
@@ -168,17 +184,17 @@ function myMap() {
 
 
 
-  var acc = document.getElementsByClassName("accordion");
-  var i;
+  // var acc = document.getElementsByClassName("accordion");
+  // var i;
   
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
-      }
-    });
-  }
+  // for (i = 0; i < acc.length; i++) {
+  //   acc[i].addEventListener("click", function() {
+  //     this.classList.toggle("active");
+  //     var panel = this.nextElementSibling;
+  //     if (panel.style.display === "block") {
+  //       panel.style.display = "none";
+  //     } else {
+  //       panel.style.display = "block";
+  //     }
+  //   });
+  // }
