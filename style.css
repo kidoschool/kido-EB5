@@ -100,7 +100,7 @@ a {
   color: #eee;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
   .scrolled{
     background-color: #00356b ;
     transition: background-color 0.5s;
@@ -169,6 +169,7 @@ white-space: nowrap;
 
 
 .nav-items{
+  display: inline-block;
   display: flex;
   flex: 1;
   padding: 0 0 0 4rem;
@@ -178,22 +179,18 @@ white-space: nowrap;
 
 .nav-link{
   display: inline-block;
-padding-top: 0.3125rem;
-  font-size: 1.5em;
-  font-weight: 600;
-  color: #ffffff;
-  padding: 0 0 0 2rem;
-}
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+  color: #fff;
+  font-weight: 700;
+  }
 
-.nav-links{
-display: inline-block;
 
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: #000;
-  /* padding: 0 0 0 5rem; */
-  margin: 1rem 4rem 0 0;
-}
+
 
 .nav-num{
   color: #000;
