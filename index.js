@@ -52,7 +52,7 @@ function closeMenu() {
     //   tablinks[i].className = tablinks[i].className.replace(" active", "");
     // }
     document.getElementById(cityName).style.display = "block";
-    document.getElementById(cityName).focus();
+    // document.getElementById(cityName).focus();
 
     // evt.currentTarget.className += " active";
 
@@ -65,9 +65,9 @@ function closeMenu() {
   }
 
 
-$(document).ready(function(){
-  $("#myModal").modal('show');
-});
+// $(document).ready(function(){
+//   $("#myModal").modal('show');
+// });
 
 
 
@@ -165,3 +165,20 @@ function myMap() {
   $(window).scroll(function(){
     $('nav').toggleClass('scrolled', $(this).scrollTop() > window.innerHeight);
   });
+
+
+
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }

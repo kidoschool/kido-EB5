@@ -180,15 +180,11 @@ white-space: nowrap;
 .nav-link{
   display: inline-block;
   padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
-  line-height: inherit;
-  white-space: nowrap;
-  color: #fff;
-  font-weight: 700;
-  }
-
+  font-size: 16px;
+  font-weight: 800;
+  color: #ffffff;
+  padding: 0 0 0 2rem;
+}
 
 
 
@@ -406,6 +402,9 @@ white-space: nowrap;
   color: #fff;
   border-radius: 30px;
   display: inline-block;
+  background-color: #5f712d;
+  /* border-color: #5f712d; */
+  color: #fff;
 }
 
 
@@ -524,14 +523,14 @@ button.bannerbtn2:hover {
 
 
 
-@media only screen and (max-width: 1028px) {
+@media only screen and (max-width: 768px) {
   .services-item {
     margin: 0 auto;
     border-radius: 10px 20px;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
     height: auto;
     width: auto;
-    padding: 10px;
+    padding: 5px;
   }
 
   .benefits{
@@ -539,6 +538,13 @@ button.bannerbtn2:hover {
     height: 100%;
     padding-bottom: 15px;
     margin: 0 auto;
+  }
+
+  .benefits-img{
+    /* height: 50%;
+    width: 60%; */
+    margin: 10px;
+    padding: 0;
   }
 
 }
@@ -554,7 +560,7 @@ button.bannerbtn2:hover {
   /* height: 50%;
   width: 60%; */
   margin: 15px;
-  padding: 30px;
+  padding: 15px;
 }
 
 
@@ -653,17 +659,10 @@ font-size: 1.2em;
   border-radius: 10px;
   border: solid 2px white;
   margin-bottom: 5rem;
-  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15); */
   margin-left: 15rem;
 }
 
-.we-offer-item:hover{
-  border: solid 2px #00356B ;
-  background:#00356B;
-  color: #fff;
-  /* box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15); */
-
-}
 
 
 @media only screen and (max-width: 1024px) {
@@ -680,13 +679,7 @@ font-size: 1.2em;
     border: solid 2px white;
   }
 
-  .we-offer-item:hover{
-    border: solid 2px #00356B ;
-    background:#00356B;
-    color: #fff;
-    /* box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15); */
-  
-  }
+ 
   
   .offer-views{
     width: 80%;
@@ -700,15 +693,13 @@ font-size: 1.2em;
 
 /* ---------------------------------------------accordion-start--------------------------------------------- */
 
-.accordion-item{
+.accordions-item{
   width: 90%;
   border: none;
-  /* height: 110%; */
-  /* height: auto; */
 }
 
 @media only screen and (max-width: 1024px) {
-  .accordion-item{
+  .accordions-item{
     width: 90%;
     align-items: center;
     /* margin-left: 1rem; */
@@ -730,7 +721,7 @@ font-size: 1.2em;
   font-size: 30px;
   background-image: none;
   font-weight: 100;
-  color: orange;
+  color: #bd5319;
   transform: translateY(-4px);
   padding-left: 3rem;
 }
@@ -748,8 +739,71 @@ font-size: 1.2em;
   justify-items: center;
 }
 
-
 /* ---------------------------------------------accordion-end--------------------------------------------- */
+
+/* ---------------------------------------------accordion-temp--------------------------------------------- */
+
+/* .accordions-item{
+  width: 90%;
+  border: none;
+} */
+
+@media only screen and (max-width: 1024px) {
+  .accordions-item{
+    width: 90%;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+.accordions-header{
+  margin: 0 26vw;
+}
+
+.accordions-button{
+  background: none;
+  border: none;
+}
+
+.accordions-button:hover{
+  border: none;
+}
+
+.accordions-button:not(.collapsed) {
+  background: none;
+  color: #00356B;
+  box-shadow: none;
+  border-bottom: none;
+
+}
+
+/* .accordions-button::after {
+  width: auto;
+  height: auto;
+  font-size: 30px;
+  background-image: none;
+  font-weight: 100;
+  transform: translateY(-4px);
+  padding-left: 3rem;
+}
+.accordions-button:not(.collapsed)::after {
+  width: auto;
+  height: auto;
+  background-image: none;
+  font-size: 30px;
+  transform: translate(-5px, -4px);
+  transform: rotate(0deg);
+} */
+
+.accordions{
+  justify-items: center;
+}
+
+
+
+/* ---------------------------------------------accordion-temp--------------------------------------------- */
+
+
 
 /* ---------------------------------------------map-start--------------------------------------------- */
 
@@ -762,6 +816,8 @@ font-size: 1.2em;
 .head-titles{
   color: #002b6b;
 }
+
+
 
 /* ---------------------------------------------map-end--------------------------------------------- */
 
@@ -932,7 +988,7 @@ font-size: 1.2em;
   height: 60vh;
   width: 100vh;
   border-radius: 20px;
-  background: url(images/Chiswick-London.png) no-repeat ;
+  /* background: url(images/Chiswick-London.png) no-repeat ; */
   background-size: cover;
   margin: 0 auto;
   /* margin-top: 6rem; */
@@ -941,7 +997,7 @@ font-size: 1.2em;
 }
 
 .chiswick{
-  background-image: url(images/content_wave-bg1.png);
+  /* background-image: url(images/content_wave-bg1.png); */
   position: relative;
   /* z-index: 1; */
 }
@@ -1150,18 +1206,22 @@ footer{
 
 
 
-.broc_common{
-  background-color: white;
-  border: 1px solid #00356b;
-  color: #00356b;
+.broc_commons{
+  background-color: #bd5319;
+  /* border: 1px solid #00356b; */
+  color: #fff;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
-.broc_common:hover{
-  background-color: #00356b;
-  color: #fff;
+.broc_commons:hover{
+  background:  #5f712d !important;
+  border-color: #5f712d;
+  color: #fff !important;;
 }
+
+
 
 
 
