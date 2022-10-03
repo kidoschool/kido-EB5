@@ -20,7 +20,7 @@
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style_min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
    <!-- JavaScript Bundle with Popper -->
     <!-- <script src="js/jquery-3.5.1.min.js"></script> -->
@@ -301,7 +301,7 @@
             <div class="logo col-lg-6">
               <a class="navbar-brand nav-logo" href="#"><img class="nav-logos text-white" src="images/kidologo-temp(1).png" alt=""></a>
            </div>
-            <ul class="nav-menu nav-items col-md-6 ">
+            <ul class="nav-menu nav-items navbar-nav mr-auto w-100 justify-content-end clearfix">
                 <li class="nav-item text-white">
                     <a href="#our-feature" class="nav-link">EB-5 Investment</a>
                 </li>
@@ -565,8 +565,6 @@
         <div class="carousel-inner">
   
           <div class="carousel-item active">
-            <div class="carousel-caption d-none d-md-block banner-t">
-            </div>
             <img src="images/Kido-4.jpg" class="d-block offer-views w-100" alt="...">
           </div>
           <div class="carousel-item">
@@ -1176,10 +1174,10 @@
                   <div class="container">
                       <div class="row">
                           <div class="col-md-6 col-lg-6">
-                              <div class="text-center">
+                              <div class="text-center" id="container">
                                   <img src="images/EYP Chart Final 2022.png" data-aos="fade-left"
                                       data-aos-easing="ease-out-back" data-aos-duration="800" data-aos-delay="0"
-                                      alt="" width="470" class="img-fluid circule-img pt-5">
+                                      alt="" width="470" class="img-fluid circule-img pt-5 " id="zoom">
                               </div>
                           </div>
                           <div class="col-lg-6 mt-5 equity-awess">
@@ -1261,7 +1259,9 @@
                           <div class="col-md-8 col-lg-8 mt-5 text-center equity-awess">
                               <!-- <h1 class="mb-5" style="color: #00365b;"> <b>Ready for a conversation?</b> </h1> -->
                               <a href="https://join.kidoschools.com/meetings/kawanbir" target="_blank">
-                                  <h1 style="font-size: 25px;"><img src="images/icon-14.png" width="40" class="text-center" alt=""> Schedule a call with us today!
+                                  <h1 style="font-size: 25px; padding-right: 5px;"><img src="images/icon-14.png" width="40" class="text-center" alt=""> 
+                                    <!-- Schedule a call with us today! -->
+                                    <button class="btn broc_commons px-4 ml-4">Ready to chat</button>
                                   </h1>
                               </a>
                           </div>
@@ -1442,13 +1442,13 @@
             <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
                   <div id="Kido_Vision" class="tabcontent" >
-                      <div class="container">
+                      <div class="container" id="container">
                           <div class="row">
                               <div class="col-md-6 col-lg-6">
                                   <div class="text-center">
                                       <img src="images/EYP Chart Final 2022.png" data-aos="fade-left"
                                           data-aos-easing="ease-out-back" data-aos-duration="800" data-aos-delay="0"
-                                          alt="" width="470" class="img-fluid circule-img pt-5">
+                                          alt="" width="470" class="img-fluid circule-img zoom_img pt-5">
                                   </div>
                               </div>
                               <div class="col-lg-6 mt-5 equity-awess">
@@ -1671,8 +1671,8 @@
 
 
 
-<section class="chiswick mt-5 pt-5 pb-5">
-  <br><br><br><br><br><br><br>
+<section class="chiswick mt-5 pb-5">
+  <br><br><br><br><br><br>
   <div class="container">
     <div class="row">
 <!-- <div id="chiswick-img" class="col-md-12 col-lg-12 mt-4 text-center curved"> -->
@@ -1712,11 +1712,10 @@
 
       <iframe id="chiswick-img" class="responsive-iframe"  src="https://www.youtube.com/embed/NgoodAfg0Sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-      <div class="row text-white chiswick-wave text-center pt-4">
-        <h2 style="font-weight: 600;">THE OPPORTUNITY</h2>
-        <h6>EB5 with Kido | The Right Choice</h6>
-        <p>We creating a global platform dedicated to delivering the highest quality early years <br>
+      <div class="row text-dark chiswick-wave text-center pt-4">
+        <h2 style="font-weight: 600; color: #00365b;">THE OPPORTUNITY</h2>
+        <h5 style="font-size: 15px;">EB5 with Kido | The Right Choice</h5>
+        <p style="font-size: 14px;">We creating a global platform dedicated to delivering the highest quality early years <br>
            education anywhere in the world. We are integrating advances in pedagogy, technology and <br> design to create unique learning experiences for children, at our schools, and 
             in their homes <br>
             and communities.</p>
@@ -1797,7 +1796,7 @@
                                       
                                   </p>
                                 </ul> -->
-                                <!-- <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a> -->
+                                <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
 
                                 <ul class="list-unstyled mobile-list" style="display:flex;">
                                   <!-- <figure>
@@ -1834,7 +1833,7 @@
                                 </ul>
                             </div>
                             <div class="icon-info">
-                              <a href="https://www.facebook.com/kidoschoolaustin/" target="_blank" rel="noreferrer"><i class="fa fa-facebook pr-3"></i></a>
+                              <a href="https://www.facebook.com/kidoschoolaustin/" target="_blank" rel="noreferrer"><i class="fa fa-facebook-f pr-3"></i></a>
                               <a href="https://www.instagram.com/kidoschoolaustin/?hl=en" target="_blank" rel="noreferrer"><i class="fa fa-instagram pr-3"></i></a>
                               <a href="https://www.youtube.com/c/KidoSchools" target="_blank" rel="noreferrer"><i class="fa fa-youtube"></i></a>
                             </div>
@@ -1892,6 +1891,7 @@ $('.carousel').carousel('cycle');
 });  
 
 </script>
+
 
 
 </body>

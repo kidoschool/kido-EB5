@@ -55,8 +55,8 @@ body{
 /* ----------------------------------------------nav-start---------------------------------------------- */
 
 h1 , h2 , h3 , h4 ,h5 ,h6{
-  font-weight: 400;
-  font-family: 'Quicksand';font-size: 15px;
+  font-weight: 600;
+  font-family: 'Quicksand';
   text-transform: capitalize;
 }
 
@@ -169,21 +169,22 @@ white-space: nowrap;
 
 
 .nav-items{
-  display: inline-block;
+  display: block;
   display: flex;
   flex: 1;
-  padding: 0 0 0 4rem;
+  padding: 0 2rem 0 4vw;
   margin-top: 1.3rem;
   text-align: right;
 }
 
 .nav-link{
-  display: inline-block;
+  display: block;
   padding-top: 0.3125rem;
-  font-size: 16px;
+  font-size: 1.7em;
+  /* font-size: larger; */
   font-weight: 800;
   color: #ffffff;
-  padding: 0 0 0 2rem;
+  padding: 0 0 0 2em;
 }
 
 
@@ -915,9 +916,9 @@ font-size: 1.2em;
 /* ---------------------------------------------listing-start--------------------------------------------- */
 
 @media only screen and (max-width: 1024px) {
-  .kocka220x140 {
+  /* .kocka220x140 {
     margin: 1vh 47vw;
-  }
+  } */
 
   .listing{
     margin: 0 auto;
@@ -930,7 +931,7 @@ font-size: 1.2em;
 
 .kocka220x140 {
   border-radius:10px;
-  width: 220px;
+  width: 80%;
   margin: 8rem 0 10rem 4rem;
   height: 190px;
   float: left;
@@ -963,7 +964,7 @@ font-size: 1.2em;
     /* flex-direction: column; */
     /* align-items: center !important; */
     margin-bottom: 20px;
-    margin: 3vh 20vw;
+    /* margin: 3vh 20vw; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -986,8 +987,8 @@ font-size: 1.2em;
 
 #chiswick-img{
   position: relative;
-  height: 60vh;
-  width: 100vh;
+  width: 710px;
+  height: 400px;
   border-radius: 20px;
   /* background: url(images/Chiswick-London.png) no-repeat ; */
   background-size: cover;
@@ -1003,18 +1004,17 @@ font-size: 1.2em;
   /* z-index: 1; */
 }
 
-@media screen and (max-width: 1028px) {
+@media screen and (max-width: 767px) {
   #chiswick-img{
     position: relative;
-    height: 100%;
-    width: 80vw;
+    height: 60vh;
+    width: 100vw;
     border-radius: 20px;
-    background: url(images/Chiswick-London.png) no-repeat ;
     background-size: cover;
     margin: 0 auto;
-    margin-top: 10rem;
     display: flex;
     align-items: center;
+    object-fit: cover;
   }
 }
 
@@ -1270,10 +1270,46 @@ area{
   -webkit-filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
 } */
 
+/*--------footer-area start---------*/
+.footer-area{
+  background-color: #00356b;
+} 
 
+.footer-area a{ 
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-bottom p{ 
+    color: #fff;
+}
+
+.footer-info p {
+  font-size: 13px;
+  color: #fff;
+}
+
+.footer-info li {
+    padding-bottom: 10px;
+    font-size: 13px;
+    color: #fff;
+}
+
+.footer-widget h4.widget-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    padding-top: 3%;
+}
+
+.bottom-line {
+  border-bottom: 1px solid #bfc4db;
+}
 
 .icon-info i {
-  font-size: 20px;
+  font-size: 25px;
   color: #fff;
   padding: 0.2em;
 }
