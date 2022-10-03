@@ -773,6 +773,7 @@ font-size: 1.2em;
 
 .accordions-header{
   margin: 0 26vw;
+  text-align: center;
 }
 
 .accordions-button{
