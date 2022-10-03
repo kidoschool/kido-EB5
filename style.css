@@ -94,7 +94,7 @@ a {
 }
 
 .carousel-caption{
-  background-color: rgba(100,100,100,0.7);
+  /* background-color: rgba(100,100,100,0.7); */
   max-height: max-content;
   font-weight: bolder;
 }
@@ -1188,9 +1188,10 @@ footer{
   background-color: #bd5319;
   /* border: 1px solid #00356b; */
   color: #fff;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 14px;
   font-weight: 500;
+  z-index: 100;
 }
 
 .broc_commons:hover{
@@ -1307,7 +1308,6 @@ area{
 
 
 #zoom_container {
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
   height: 500px;
   width: 500px;
   overflow: hidden;
