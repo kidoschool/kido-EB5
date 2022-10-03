@@ -61,7 +61,13 @@ h1 , h2 , h3 , h4 ,h5 ,h6{
 }
 
 p {
-  font-family: 'Montserrat';font-size: 1.3em;
+  font-family: 'Montserrat';font-size: 16px;
+}
+
+@media only screen and (max-width: 767px){
+  p {font-family: 'Montserrat';
+  font-size: 14px;
+  }  
 }
 
 li {
@@ -582,7 +588,7 @@ button.bannerbtn2:hover {
 /* -----------------------------------------------franchise-start--------------------------------------------- */ 
 
 .head-titles{
-  font-size: 30px;
+  font-size: 23px;
   font-weight: 700;
 }
 
@@ -639,9 +645,9 @@ button.bannerbtn2:hover {
 font-size: 2em;
 }
 
-.we-offer-p {
+/* .we-offer-p {
 font-size: 1.2em;
-}
+} */
 
 .offer-img{
   /* border-radius: 50px 20px 30px 40px; */
@@ -652,10 +658,10 @@ font-size: 1.2em;
   color: #000;
   background-color: #fff;
   /* margin: 15px 0; */
-  padding: 40px;
+  padding: 25px;
   text-align: center;
-  height: 150px;
-  width: 350px;
+  height: 20vh;
+  width: 25vw;
   /* background: #f2f2f2; */
   overflow: hidden;
   border-radius: 10px;
@@ -835,53 +841,28 @@ font-size: 1.2em;
   margin-left: 8rem;
   cursor: pointer;
   position: relative;
-  box-shadow: 7px 10px 7px  lightgray;
+  /* box-shadow: 7px 10px 7px  lightgray; */
 }
 
 .Awessome-items{
   border-radius:10px;
-  width: 130px;
+  /* width: 130px; */
   /* margin: 25px; */
   height: 120px;
   align-items: center;
   /* margin-left: 8rem; */
   cursor: pointer;
   position: relative;
-  box-shadow: 7px 10px 7px  lightgray;
+  /* box-shadow: 7px 10px 7px  lightgray; */
 }
 
 
-.kido-lo, .chess-logo, .rocket-logo, .notes-logo, .chat-logo {
-  /* background: #fff; */
+/* .kido-lo, .chess-logo, .rocket-logo, .notes-logo, .chat-logo {
   color: #696687;
-}
+} */
 
 
 
-.kido-lo.active, .kido-lo:hover{
-  background-color: #f19b10;
-  color: #fff;
-}
- 
-.chess-logo.active, .chess-logo:hover{
-  background-color: #8379ee;
-  color: white;
-}
-
-.rocket-logo.active, .rocket-logo:hover{
-  background-color: #f87790;
-  color: white;
-}
-
-.notes-logo.active, .notes-logo:hover{
-  background-color: #58bbfa;
-  color: white;
-}
-
-.chat-logo.active, .chat-logo:hover{
-  background-color: #4fd68d;
-  color: white;
-}
 
 
 /* .Awessome-item.active{
@@ -947,15 +928,11 @@ font-size: 1.2em;
 
 .listing-text{
   color: #00356B ;
-  
 }
 .listing-price{
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(to right, #f32170,
-          #ff6b08, #cf23cf, #eedd44);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  color:#bd5319 ;
 }
 
 
@@ -1318,7 +1295,6 @@ area{
 .ludo-img{
   border-radius: 10px;
   width: 130px;
-  box-shadow: 7px 10px 7px  lightgray;;
 }
 
 

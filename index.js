@@ -205,3 +205,4 @@ function myMap() {
       zoom_img.style.transformOrigin = `center center`;
       zoom_img.style.transform = "scale(1)";
   }
+
