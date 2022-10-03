@@ -1325,3 +1325,24 @@ area{
   height: 100%;
   width: 100%;
 }
+
+
+
+#image1{
+  background-image: url("images/Eb5\ Landing\ Page\ Top\ Slider_04.jpg");
+  height: 110vh;
+  background-size: cover;
+  background-position: center;
+}
+#image1 a,#image2 a{
+  top: 60vh;
+  left:10vw;
+  position: absolute;
+}
+#image2{
+  background-image: url("images/Eb5\ Landing\ Page\ Top\ Slider_03.jpg");
+  height: 110vh;
+  background-size: cover;
+  background-position: center;
+
+}

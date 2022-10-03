@@ -11,9 +11,9 @@
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">  -->
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css"> -->
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <!-- <link href="https://fonts.cdnfonts.com/css/circular-std" rel="stylesheet"> -->
     <!-- <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'> -->
@@ -24,10 +24,13 @@
     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
    <!-- JavaScript Bundle with Popper -->
     <!-- <script src="js/jquery-3.5.1.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script> -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <!-- <script src="js/bootstrap.min.js"></script> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js" ></script>
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
 </head>
 <body>
 
@@ -294,10 +297,10 @@
     
 <!-- /* ----------------------------------------------nav-start---------------------------------------------- */ -->
 
-    <section class="header " id="header-wrap">
+    <section class="header " id="header-wrap" style="z-index: 999;">
       <div class="container-fluid">
         <div class="row">
-          <nav class="navbar navbar-expand-lg navbar-light  bg-color fixed-top scrolled">
+          <nav class="navbar navbar-expand-lg navbar-light  bg-color fixed-top ">
             <div class="logo col-lg-6">
               <a class="navbar-brand nav-logo" href="#"><img class="nav-logos text-white" src="images/kidologo-temp(1).png" alt=""></a>
            </div>
@@ -342,47 +345,24 @@
 
 
 
-<section id="banner" class="home-banner-area" >
-  <div class="container-fluid">
-      <div class="row " >
-          <div id="carouselExampleSlidesOnly" class="carousel slide  m-0 p-0 " data-ride="carousel" >
-              <div class="carousel-inner">
-                <!-- <div class="carousel-item active">
-                  <div class="carousel-caption d-md-block banner-t">
-                    <h1 class="banner-texts">AN EB-5 INVESTMENT OPPORTUNITY </h1>
-                    <h2 class="banner-p"><b>Are Direct Investments Safe with only 1 Investor rather than a pool of investors?</b> </h2>
-                  </div>
-                  <img src="images/Eb5 Landing Page Top Slider_01.jpg" class="d-block mobile-view w-100" alt="...">
-                </div> -->
-                <div class="carousel-item active">
-                  <div class="carousel-caption d-md-block banner-t" >
+<section style="z-index: -10;">
+  <div class="owl-carousel owl-theme">
 
-                    <a href="#Contact"  class="btn broc_commons px-4 mt-3">An EB5 Opportunity <br>Get In Touch</a>
-                    <!-- <h1 class="banner-texts">AN EB-5 INVESTMENT OPPORTUNITY </h1>
-                    <h2 class="banner-p"><b>Are Direct Investments Safe with only 1 Investor rather than a pool of investors?</b> </h2> -->
-
-                  </div>
-                  <img src="images/Eb5 Landing Page Top Slider_04.jpg" class="d-block mobile-view w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <div class="carousel-caption d-md-block banner-t">
-
-                    <a href="#Contact"  class="btn broc_commons px-4 mt-3">An EB5 Opportunity <br>Get In Touch</a>
-                    <!-- <h1 class="banner-texts">AN EB-5 INVESTMENT OPPORTUNITY </h1>
-                    <h2 class="banner-p"><b>Are Direct Investments Safe with only 1 Investor rather than a pool of investors?</b> </h2> -->
-                  </div>
-                  <img src="images/Eb5 Landing Page Top Slider_03.jpg" class="d-block mobile-view w-100" alt="...">
-                </div>
-
-
-              </div>
-          </div>
+    <div class="item">
+      <div class="d-block w-100" id="image1">
+        <a href="#Contact"  > <h1 class="text-white display-3"> <b style="font-weight: 900;">An EB5 Investment Opportunity</b></h1>  <br> <button class="btn broc_commons"> Get In Touch</button></a>
       </div>
+    </div>
+
+    <div class="item">
+      <div class="d-block w-100" id="image2">
+        <a href="#Contact"  > <h1 class="text-white display-3"> <b style="font-weight: 900;">An EB5 Investment Opportunity</b></h1>  <br> <button class="btn broc_commons"> Get In Touch</button></a>
+      </div>
+    </div>
+
+
   </div>
-</section> 
-
-
-
+</section>
 
 <!-- <section >
       <div class="row container justify-content-center">
@@ -1866,8 +1846,8 @@
 
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script> -->
 <script src="index.js?v=0.3"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVtvix8ZhA1BRZLHS_DRSJtFsmQ8FQdf0&callback=myMap"></script>
 <!-- <script src="/path/to/cdn/jquery.slim.min.js"></script> -->
@@ -1875,12 +1855,21 @@
 
 <script>
   $(document).ready(function () {
-$('.carousel').carousel({
-    interval: 3100,
-    pause:null
-});
+// $('.carousel').carousel({
+//     interval: 1100,
+//     pause:null
+// });
 
 $('.carousel').carousel('cycle');
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    items:1,
+    autoplay:true,
+    autoplayTimeout:5000
+})
+
+
 });  
 
 </script>
