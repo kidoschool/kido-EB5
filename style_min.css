@@ -111,20 +111,14 @@ transform: translateY(-50%);
   color: #00365b;
 }
 
-.about-p{
-  font-size: 15px;
-  font-weight: 600;
-}
+
 
 .about-t{
 font-size: 20px;
 /* padding-left: 2rem; */
 }
 
-.about-p{
-  font-size: 13px;
-  /* padding-left: 2rem; */
-}
+
 
 .main-liner {
   border-left: 2px solid #000;
