@@ -82,7 +82,7 @@ function closeMenu() {
 
 
 $(document).ready(function(){
-  $("#myModal").modal('show');
+  // $("#myModal").modal('show');
 });
 
 
@@ -183,14 +183,21 @@ function myMap() {
   });
 
 
-  const container = document.getElementById("container");
-  var zoom_img = document.querySelector("zoom_img");
+  // var container = document.getElementById("zoom_container");
+  // var zoom_img = document.getElementById("zoom_img");
+
+  const container = document.getElementById("zoom_container");
+  const zoom_img  = document.getElementById("zoom_img");
+
   container.addEventListener("mousemove", onZoom);
   container.addEventListener("mouseover", onZoom);
   container.addEventListener("mouseleave", offZoom);
   function onZoom(e) {
       const x = e.clientX - e.target.offsetLeft;
-      const y = e.clientY - e.target.offsetTop;
+      const y = window.scrollY + e.clientY - e.target.offsetTop ;
+      // const y = e.clientY - Math.round((e.clientY * 25) /100);
+      // const result = Math.round((e.clientY / 10) * 100)
+      // console.log(x,"              ",y,"              ",window.scrollY);
       zoom_img.style.transformOrigin = `${x}px ${y}px`;
       zoom_img.style.transform = "scale(2.5)";
   }

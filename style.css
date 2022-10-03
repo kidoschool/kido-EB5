@@ -88,7 +88,7 @@ a {
 }
 
 .carousel-caption{
-  background-color: rgba(100,100,100,0.3);
+  background-color: rgba(100,100,100,0.7);
   max-height: max-content;
   font-weight: bolder;
 }
@@ -1325,4 +1325,20 @@ area{
 .widget-title{
   font-size: 14px;
   font-weight: 600;
+}
+
+
+
+
+#zoom_container {
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+  height: 500px;
+  width: 500px;
+  overflow: hidden;
+}
+#zoom_img {
+  transform-origin: center center;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
