@@ -568,8 +568,8 @@ button.bannerbtn2:hover {
 .benefits-img{
   /* height: 50%;
   width: 60%; */
-  margin: 15px;
-  padding: 15px;
+  margin:0px 15px;
+  /* padding: 15px; */
 }
 
 
@@ -1366,7 +1366,7 @@ area{
     /* height: auto; */
     border-radius: 20px;
     /* background: url(images/Chiswick-London.png) no-repeat ; */
-    background-size: cover;
+    background-size: contain;
     margin: 0 auto;
     /* margin-top: 6rem; */
     display: flex;
