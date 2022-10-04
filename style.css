@@ -1093,6 +1093,14 @@ svg#play:hover #triangle {
 
 }
 
+
+#newYTfrm{
+  width: 50vw;
+  height: 50vh;
+  border-radius: 19px;
+}
+
+
 @media screen and (max-width: 1028px) {
   .input-mess{
     width: auto;
@@ -1118,6 +1126,10 @@ svg#play:hover #triangle {
     font-size: 13px;
     border-radius: 9px;
     border: 1px solid #eee;
+  }
+
+  #newYTfrm{
+    width: 90vw;
   }
 }
 
