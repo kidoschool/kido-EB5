@@ -995,7 +995,7 @@ font-size: 1.2em;
 @media screen and (max-width: 767px) {
   #chiswick-img{
     position: relative;
-    height: 60vh;
+    /* height: 60vh; */
     /* width: 100vw; */
     border-radius: 20px;
     background-size: contain;
@@ -1380,7 +1380,7 @@ area{
 @media only screen and (-webkit-min-device-pixel-ratio: 3) {
   #chiswick-img{
     position: relative;
-    width: 100%;
+    /* width: 100%; */
     /* height: auto; */
     border-radius: 20px;
     /* background: url(images/Chiswick-London.png) no-repeat ; */
