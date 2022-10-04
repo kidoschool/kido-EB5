@@ -1362,7 +1362,7 @@ area{
 @media only screen and (-webkit-min-device-pixel-ratio: 3) {
   #chiswick-img{
     position: relative;
-    /* width: 100%; */
+    width: auto;
     /* height: auto; */
     border-radius: 20px;
     /* background: url(images/Chiswick-London.png) no-repeat ; */
