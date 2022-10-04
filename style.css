@@ -399,7 +399,7 @@ white-space: nowrap;
   background-color: #6bc449;
   /* position: relative; */
   z-index: 1;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #fff;
 }
 

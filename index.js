@@ -54,6 +54,10 @@ function closeMenu() {
         // window.setTimeout(() => element.focus(), 0);
         // return false;
     // }
+    $(".Awessome-items").removeClass("active");
+
+    evt.currentTarget.classList.add('active');
+
 
   }
 
