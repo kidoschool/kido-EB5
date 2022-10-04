@@ -1337,6 +1337,9 @@ area{
   height: 110vh;
   background-size: cover;
   background-position: center;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  text-shadow: 2px 2px #444;
 }
 #image1 a,#image2 a{
   top: 60vh;
@@ -1348,5 +1351,7 @@ area{
   height: 110vh;
   background-size: cover;
   background-position: center;
-
+  font-family: 'Montserrat';
+  font-weight: 700;
+  text-shadow: 2px 2px #444;
 }
