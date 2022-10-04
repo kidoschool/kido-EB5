@@ -20,7 +20,7 @@
 
 html{
   font-size: 66.5%;
-  font-family: 'Montserrat', sans-serif ;
+  /* font-family: 'Montserrat', sans-serif ; */
   scroll-behavior: smooth;
 }
 
@@ -124,7 +124,11 @@ a {
   }
 }
 
-
+.display-3{
+  text-shadow: 2px 2px #444;
+  font-weight: 500;
+  font-family: 'Montserrat';
+}
 
 .nav-logos{
   height: 7vh;
@@ -616,6 +620,10 @@ button.bannerbtn2:hover {
   color: #00356B;
 }
 
+.franchise-awessomes{
+  padding-top: 1vw;
+}
+
 .franchise-tag{
   font-size: 15px;
   /* bottom: 30px; */
@@ -992,7 +1000,9 @@ font-size: 1.2em;
   /* z-index: 1; */
 }
 
-@media screen and (max-width: 767px) {
+
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
   #chiswick-img{
     position: relative;
     /* height: 60vh; */
@@ -1359,6 +1369,20 @@ area{
 
 
 
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+  #chiswick-img{
+    position: relative;
+    width: auto;
+    /* height: auto; */
+    border-radius: 20px;
+    /* background: url(images/Chiswick-London.png) no-repeat ; */
+    background-size: cover;
+    margin: 0 auto;
+    /* margin-top: 6rem; */
+    display: flex;
+    align-items: center;
+  }
+}
 
 
 
