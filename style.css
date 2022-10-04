@@ -996,7 +996,7 @@ font-size: 1.2em;
   #chiswick-img{
     position: relative;
     /* height: 60vh; */
-    /* width: 100vw; */
+    width: auto;
     border-radius: 20px;
     background-size: contain;
     margin: 0 auto;
@@ -1357,24 +1357,6 @@ area{
 }
 
 
-
-.video-con {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px; 
-  height: 0; 
-  overflow: hidden;
-}
-
-.video-con iframe,
-.video-con object,
-.video-con embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 
 
 @media only screen and (-webkit-min-device-pixel-ratio: 3) {
