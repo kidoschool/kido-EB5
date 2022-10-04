@@ -1375,3 +1375,24 @@ area{
   width: 100%;
   height: 100%;
 }
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+  #chiswick-img{
+    position: relative;
+    width: 100%;
+    /* height: auto; */
+    border-radius: 20px;
+    /* background: url(images/Chiswick-London.png) no-repeat ; */
+    background-size: cover;
+    margin: 0 auto;
+    /* margin-top: 6rem; */
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+
+
+
