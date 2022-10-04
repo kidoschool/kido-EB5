@@ -93,13 +93,30 @@ transform: translateY(-50%);
   position: absolute;
   top: 105%;
   left: 73%;
-  margin-left: -50px;
+  margin-left: -37%;
   width: 0;
   height: 0;
   border-top: solid 20px #00356B;
   border-left: solid 20px transparent;
   border-right: solid 20px transparent;
 }
+
+
+
+
+#rToChtBtn.active:after {
+  content:'';
+  position: absolute;
+  top: 105%;
+  left: 73%;
+  margin-left: -35%;
+  width: 0;
+  height: 0;
+  border-top: solid 20px #00356B;
+  border-left: solid 20px transparent;
+  border-right: solid 20px transparent;
+}
+
 
 .about-temp{
   /* padding-top: 4rem; */
@@ -177,3 +194,24 @@ font-size: 20px;
 
 
 
+
+.read_more{
+  user-select:none;
+      border-radius: 30px;
+      -webkit-user-select:none;
+      -moz-user-select:none;
+      -ms-user-select:none;
+      cursor:pointer;
+      border:none;
+      padding:8px;
+      font-size:16px;
+      color:white;
+      font-family:'Montserrat';
+      box-sizing:border-box;
+      background-color: #00356b;
+      padding: 10px 30px;
+}  
+
+#text{
+  display:none;
+}

@@ -64,6 +64,8 @@
                 condition to using this Site for any purpose whatsoever. Continued use of the Site
                 signifies your acceptance of, and agreement to be bound by, each and every
                 one of the following terms and conditions.<br><br>
+            </p>
+            <span id="text"><p>
 
                 The information on this Site is for informational purposes only, and is not an
                   offering of or a solicitation to purchase securities or otherwise make an
@@ -283,7 +285,9 @@
                         value of the residence) will count as a liability as well. The reason for this is to
                         prevent net worth from being artificially inflated through converting home equity<br><br>     
 
-            </p>
+                      </p></span>
+                      <button class="read_more" id="toggle">Read More</button>
+
           </div>
         
         </div>
@@ -1078,7 +1082,6 @@
               </div>
           </div>
 
-          <div class="col-md-1 col-lg-1"></div>
 
 
           <div id="tabcontents">
@@ -1550,7 +1553,7 @@
         <div class="accordions-item">
             <h2 class="accordions-header" id="flush-headingfive">
               <a href="#flush-collapsefive" class="accordions-button collapsed"  data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
-                <div class="Awessome-items  " data-aos="fade-up" data-aos-duration="3000" type='radio'onclick="openCity1(event, 'Ready_Chat')">
+                <div class="Awessome-items  " data-aos="fade-up" data-aos-duration="3000" id="rToChtBtn" type='radio' onclick="openCity1(event, 'Ready_Chat')">
                         <img src="images/Button Icons Ready To Chat.jpg" class="img-fluid ludo-img " width="135" alt="">
                 </div>
               </a>
@@ -1912,7 +1915,18 @@ $('.owl-carousel').owlCarousel({
     autoplay:true,
     autoplayTimeout:5000
 })
-
+$("#toggle").click(function() {
+      var elem = $("#toggle").text();
+      if (elem == "Read More") {
+        //Stuff to do when btn is in the read more state
+        $("#toggle").text("Read Less");
+        $("#text").slideDown();
+      } else {
+        //Stuff to do when btn is in the read less state
+        $("#toggle").text("Read More");
+        $("#text").slideUp();
+      }
+    });
 
 });  
 
