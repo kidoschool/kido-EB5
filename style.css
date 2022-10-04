@@ -933,7 +933,7 @@ font-size: 1.2em;
 
 .listing-stuff{
   /* justify-content: center; */
-  padding-top: 50px;
+  padding-top: 3vh;
   box-shadow: 7px 15px 15px 7px  lightgray;
 }
 
