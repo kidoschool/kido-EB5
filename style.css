@@ -1,6 +1,20 @@
 /* @import url('https://fonts.cdnfonts.com/css/circular-std'); */
-@import url('https://fonts.cdnfonts.com/css/Montserrat');
+/* @import url('https://fonts.cdnfonts.com/css/Montserrat'); */
 @import url('https://fonts.cdnfonts.com/css/Quicksand');
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat'), url('Montserrat-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Quicksand"), url('Quicksand_Bold.woff2') format("woff");
+}
 
 
 
@@ -19,15 +33,12 @@
 } */
 
 html{
-  font-size: 66.5%;
+  font-size: 68.5%;
   /* font-family: 'Montserrat', sans-serif ; */
   scroll-behavior: smooth;
 }
 
-body{
-  font-family: 'Montserrat', sans-serif !important;
 
-}
 
 .modal-content{
   padding: 4rem;
@@ -55,13 +66,13 @@ body{
 /* ----------------------------------------------nav-start---------------------------------------------- */
 
 h1 , h2 , h3 , h4 ,h5 ,h6{
-  font-weight: 600;
-  font-family: 'Quicksand';
+  font-weight: 900;
+  font-family: 'Quicksand' !important;
   text-transform: capitalize;
 }
 
 p,ul {
-  font-family: 'Montserrat';font-size: 16px;
+  font-family: 'Montserrat' !important;font-size: 18px;
   list-style-position: outside;
 
 }
